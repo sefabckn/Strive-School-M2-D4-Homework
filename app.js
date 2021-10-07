@@ -16,11 +16,11 @@ function newElement() {
     } else {
         document.getElementById("myUl1").appendChild(li)
     }
-    document.getElementById("myInputs").value = "Name surname"
+    document.getElementById("myInputs").value = ""
 }
 
 function cleanTeamList() {
-    let items = document.getElementById("myInputs")
+    let items = document.getElementById("myUl1")
     items.innerText = ""
 }
 
@@ -29,13 +29,9 @@ function createTeams() {
     let inputValue = inputNode.value
     for (i = 0; i < inputValue; i++) {
         let spaceCreater = document.createElement("div")
-        for (j = 0; j < inputValue; j++) {
-            let classNameForTeams = spaceCreater.className = "class-for-team-" + j.toString()
-            let valueItem = document.getElementsByClassName("classNameForTeams").value
+        let classNameForTeams = spaceCreater.className = "class-for-team-" + i.toString()
 
-        }
-
+        newElement()
     }
-
 
 }
