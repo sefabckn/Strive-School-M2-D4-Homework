@@ -38,10 +38,11 @@
             </div>
             <button type="button" class="btn btn-secondary mt-3" onclick="newElement()">Add Name</button>
             <div class="input-group flex-nowrap mt-3">
-                <input type="text" class="form-control" placeholder="Team Number" aria-label="TeamNumber" aria-describedby="addon-wrapping">
+                <input type="text" class="form-control" id="team-number" placeholder="Team Number" aria-label="TeamNumber" aria-describedby="addon-wrapping">
             </div>
-            <button type="button" class="btn btn-secondary mt-3">Create Teams</button>
+            <button type="button" onclick="createTeams()" class="btn btn-primary mt-3">Create Teams</button>
             <button type="button" class="btn btn-secondary mt-3 ml-3">Assign</button>
+            <button type="button" onclick="cleanTeamList()" class="btn btn-secondary mt-3 ml-3">Clear list</button>
 
 
         </div>
@@ -49,48 +50,18 @@
 
     <div class="container">
         <div class="row align-items-start">
-            <div class="col">
+            <div class="col" id="myUl1">
                 <h2 id="team-name1">
 
                 </h2>
-                <div class="ul" id="myUl1">
-
-                </div>
             </div>
-            <div class="col">
+            <div class="col" id="team-list-creater">
                 <h2 id="team-name1">
 
                 </h2>
-                <div class="ul" id="myUl2">
-
-                </div>
-            </div>
-            <div class="col">
-                <h2 id="team-name2">
-
-                </h2>
-                <div class="ul" id="myUl3">
-
-                </div>
-
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

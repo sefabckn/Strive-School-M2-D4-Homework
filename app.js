@@ -16,14 +16,26 @@ function newElement() {
     } else {
         document.getElementById("myUl1").appendChild(li)
     }
-    document.getElementById("myInputs").value = " "
+    document.getElementById("myInputs").value = "Name surname"
 }
 
+function cleanTeamList() {
+    let items = document.getElementById("myInputs")
+    items.innerText = ""
+}
 
 function createTeams() {
-
     let inputNode = document.getElementById("team-number")
+    let inputValue = inputNode.value
+    for (i = 0; i < inputValue; i++) {
+        let spaceCreater = document.createElement("div")
+        for (j = 0; j < inputValue; j++) {
+            let classNameForTeams = spaceCreater.className = "class-for-team-" + j.toString()
+            let valueItem = document.getElementsByClassName("classNameForTeams").value
 
+        }
+
+    }
 
 
 }
