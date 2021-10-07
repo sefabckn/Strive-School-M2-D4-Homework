@@ -5,17 +5,25 @@
 //but teams section should be appear when we click on the assign button
 //for each click on assign button we must copy each name to any team
 
-
-const takingInputs = function() {
-    let takeInput = document.getElementsByClassName("input-group-text")
-    return takeInput
+function newElement() {
+    let inputNode = document.getElementById("myInputs")
+    let inputValue = inputNode.value
+    let li = document.createElement("li")
+    let textNode = document.createTextNode(inputValue)
+    li.appendChild(textNode)
+    if (inputValue === '') {
+        alert("Please enter a valid name")
+    } else {
+        document.getElementById("myUl1").appendChild(li)
+    }
+    document.getElementById("myInputs").value = " "
 }
-const getClickEvent = function() {
 
 
-}
-window.onload = function() {
+function createTeams() {
 
-    takingInputs()
-    getClickEvent()
+    let inputNode = document.getElementById("team-number")
+
+
+
 }
